@@ -63,7 +63,7 @@ export class GameFormComponent implements OnInit {
 
   updateGame(){
     // console.log(this.game);
-    delete this.game.created_at;
+    // delete this.game.created_at;
     this.gamesService.updateGame(this.game.id, this.game)
       .subscribe(
         res => {
